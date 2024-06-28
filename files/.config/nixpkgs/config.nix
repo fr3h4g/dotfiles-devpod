@@ -14,6 +14,7 @@
         kubectx
         k9s
         fluxcd
+        stow
       ];
     };
   };
