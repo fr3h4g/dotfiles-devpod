@@ -1,4 +1,4 @@
 #!/bin/sh
-nix-env -iA nixpkgs.stow
-nix-env -iA nixpkgs.neovim
+export XDG_CONFIG_HOME="$HOME"/.config
+nix-env -iA nixpkgs.myPackages
 stow --restow --target="$HOME" files
